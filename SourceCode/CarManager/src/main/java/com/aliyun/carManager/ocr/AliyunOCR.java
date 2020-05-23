@@ -22,11 +22,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class AliyunOCR {
-//    static IAcsClient client = null;
-//    static DefaultProfile profile = DefaultProfile.getProfile(
-//            "cn-shanghai",             //默认
-//            "LTAI4G4KWvDPqDqMLWDi3kBo",         //您的Access Key ID
-//            "ixa0RmHcmCcdjDIynpEwcOFr8tZUVe");    //您的Access Key Secret
     static Config config = null;
     static Client client = null;
 

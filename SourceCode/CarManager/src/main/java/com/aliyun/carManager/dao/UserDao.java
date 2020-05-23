@@ -43,6 +43,6 @@ public interface UserDao {
 	@Update("UPDATE USER SET NAME=#{name},SEX=#{sex},TEL=#{tel},EMAIL=#{email},REMARK=#{remark},PARENT=#{parent.uid} WHERE UID=#{uid}")
 	int updateUser(User user);
 
-	@Update("UPDATE USER SET IDCARDIMG=#{idCardImg}#{suffix} WHERE UID=#{uid}")
-	int updateUserIdCardImg(User user,String suffix);
+	@Update("UPDATE USER SET IDCARDIMG=#{idCardImg} WHERE UID=#{uid}")
+	int updateUserIdCardImg(User user);
 }

@@ -68,8 +68,8 @@ public class MainController {
             saveFile = new File(filePath + idCardImg + fileName.substring(fileName.lastIndexOf("."),fileName.length()));
         } else {
             user.setIdCardImg(user.getUid().toString() + suffix);
-            userDao.updateUserIdCardImg(user,suffix);
-            saveFile = new File(filePath + user.getUid().toString() + suffix);
+            userDao.updateUserIdCardImg(user);
+            saveFile = new File(filePath + user.getIdCardImg());
         }
 
         try {
